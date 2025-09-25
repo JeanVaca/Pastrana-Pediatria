@@ -1,0 +1,408 @@
+/*!
+ * Start Bootstrap - Resume v5.0.2 (https://startbootstrap.com/template-overviews/resume)
+ * Copyright 2013-2018 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
+ */
+
+body {
+  font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  color: #868e96;
+}
+
+@media (min-width: 1000px) {
+  body {
+    padding-top: 0;
+    padding-left: 15rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #343a40;
+}
+
+h1 {
+  font-size: 5rem;
+  line-height: 5.5rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+span{
+  font-size: .8rem;
+}
+p.lead {
+  font-size: 1.15rem;
+  font-weight: 400;
+}
+
+.subheading {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-size: 1.5rem;
+}
+
+.social-icons a {
+  display: inline-block;
+  height: 3.5rem;
+  width: 3.5rem;
+  color: #617ee9 !important;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 3.5rem;
+}
+
+.social-icons a:last-child {
+  margin-right: 0;
+}
+
+.dev-icons {
+  font-size: 3rem;
+}
+
+.dev-icons .list-inline-item i:hover {
+  color: rgba(97, 126, 233, 0.85);
+}
+
+.section-heading {
+  text-transform: uppercase;
+}
+
+.section-heading .section-heading-upper {
+  display: block;
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.section-heading .section-heading-lower {
+  display: block;
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+.bg-faded {
+  background-color: rgba(97, 126, 233, 0.0);
+}
+
+#sideNav .-nav .nav-item .nav-link {
+  font-weight: 800;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}
+
+#sideNav .navbar-toggler:focus {
+  outline-color: rgba(97, 126, 233, 0.85);
+}
+
+.intro {
+  position: relative;
+}
+
+@media (min-width: 1000px) {
+  #sideNav {
+    text-align: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 17rem;
+    height: 100vh;
+  }
+  #sideNav .navbar-brand {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto auto 0;
+    padding: 0.5rem;
+  }
+  #sideNav .navbar-brand .img-profile {
+    max-width: 10rem;
+    max-height: 10rem;
+    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+  }
+  #sideNav .navbar-collapse {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    width: 100%;
+    margin-bottom: auto;
+  }
+  #sideNav .navbar-collapse .navbar-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item {
+    display: block;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+    display: block;
+  }
+  .intro .intro-img {
+    width: 55%;
+    float: right;
+  }
+  .intro .intro-map {
+    width: 55%;
+    float: right;
+  }
+  .intro .intro-imag {
+    width: 55%;
+    float: left;
+  }
+  .intro .intro-text {
+    left: 0;
+    width: 100%;
+    margin-top: 3rem;
+    position: absolute;
+  }
+  .intro .intro-esto {
+    left: 0;
+    width: 100%;
+    margin-top: 3rem;
+    position: absolute;
+  }
+  .intro .intro-textr {
+    right: 0;
+    width: 100%;
+    margin-top: 3rem;
+    position: absolute;
+  }
+  .intro-test{
+    left: 0;
+    width: 60%;
+    margin-top: 3rem;
+    position: absolute;
+  }
+  .intro-testo{
+    align: center;
+    width: 60%;
+    margin-top: 3rem;
+    position: absolute;
+  }
+  .intro-testr{
+    right: 0;
+    top: 100px;
+    width: 45%;
+    margin-top: 3rem;
+    position: absolute;
+  }
+  .intro-testmap{
+    right: 0;
+    top: 100px;
+    width: 45%;
+    margin-top: 3rem;
+    position: absolute;
+  }
+  .intro .intro-text .intro-button {
+    width: 100%;
+    left: 0;
+    position: absolute;
+    bottom: -2rem;
+  }
+  .intro .intro-esto .intro-button {
+    width: 100%;
+    left: 0;
+    position: absolute;
+    bottom: -2rem;
+  }
+  .intro .intro-textr .intro-button {
+    width: 100%;
+    right: 0;
+    position: absolute;
+    bottom: -2rem;
+  }
+}
+
+section.resume-section {
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+  max-width: 75rem;
+}
+
+section.resume-section .resume-item .resume-date {
+  min-width: none;
+}
+
+@media (min-width: 768px) {
+  section.resume-section {
+    min-height: 100vh;
+  }
+  section.resume-section .resume-item .resume-date {
+    min-width: 18rem;
+  }
+}
+
+@media (max-width: 450px){
+  .intro{
+    max-width: 100%;
+  }
+  .intro .intro-img, .intro .intro-imag{
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .intro .intro-map{
+    width: 60%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .p-5{
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+    padding-top: 0rem;
+  }
+  .section-heading-upper{
+    font-size: 2rem;
+    text-align: center;
+  }
+  .phone-med{
+    text-align: center;
+  }
+  .intro-testmap{
+    width: 80%;
+    height: 300;
+  }
+}
+
+@media (min-width: 1000px) {
+  section.resume-section {
+    min-height: 100vh;
+  }
+  section.resume-section .resume-item .resume-date {
+    min-width: 18rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .intro .intro-text {
+    width: 100%;
+  }
+  .intro .intro-textr {
+    width: 100%;
+  }
+  .intro .intro-esto {
+    width: 100%;
+  }
+  .intro-test{
+    top: 115px;
+    width: 45%;
+  }
+  .intro-testo{
+    top: 50px;
+    width: 45%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .intro .intro-text {
+    width: 70%;
+  }
+  .intro .intro-esto {
+    width: 70%;
+  }
+  .intro-test{
+    top: 115px;
+    width: 45%;
+  }
+  .intro-testo{
+    top: 50px;
+    width: 45%;
+  }
+}
+
+.bg-primary {
+  background-color: #FFF !important;
+}
+
+.text-primary {
+  color: #FFF !important;
+  font-size: 14px;
+  text-align: justify;
+}
+
+.text-primary-white{
+  font-size: 12px;
+  text-align: left;
+  color: #FFF !important;
+}
+
+.testr-white{
+  letter-spacing: 5px;
+  color: #FFF;
+}
+
+.esto-white{
+  color: #FFF;
+  text-align: left;
+}
+
+.test-white{
+  letter-spacing: 5px;
+  color: #FFF;
+}
+
+.text-primary-blue {
+  text-align: left;
+  color: #08298A !important;
+}
+
+.bg-view{
+background: linear-gradient(to bottom, #ffffff 0%,#ffffff 12%,#617ee9 12%,#617ee9 100%);
+}
+
+.text-menu{
+  color: #CCD1D1;
+}
+
+.yoga_img {
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.mt-6{
+  margin-top: 100px;
+}
+
+.menu{
+  font-size: 18px;
+  line-height: 2;
+}
+
+.testmap{
+  width: 450;
+  height: 600;
+}
