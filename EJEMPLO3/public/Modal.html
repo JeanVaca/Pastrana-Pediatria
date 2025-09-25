@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Galeria Entretenida</title>
+  <style>
+  /* The Modal (background) */
+  .modal {
+    cursor: pointer;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(36, 34, 34); /* Fallback color */
+    background-color: rgba(161, 161, 192, 0.638); /* Black w/ opacity */
+  }
+
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 700px;
+  }
+
+  /* Caption of Modal Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    color: rgb(164, 207, 9);
+    padding: 10px 0;
+    height: 150px;
+  }
+
+  /* Add Animation */
+  .modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 1s;
+    animation-name: zoom;
+    animation-duration: 3s;
+  }
+
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+  }
+
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 85px;
+    right: 290px;
+    color: rgb(104, 248, 8);
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: rgb(189, 0, 0);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+  </style>
+  </head> 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="shourtcut icon" type="image/x-icon" href="fas fa-air-freshener">
+  <div class="fixed-top">
+    <header>
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-sm navbar-light" style="background-color: rgba(229, 233, 5, 0.988)">
+            <a class="navbar-brand" href="#">IB801</a> 
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+              <span class="fas fa-bicycle"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="http://192.168.43.134:3000/Modal.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="http://192.168.43.134:3000/ejemploSockets.html">Socket.IO</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+    </header>
+  </div>
+  
+  <body> 
+    <center>
+      <div class="container-fluid">
+        <div class="jumbotron" style="background-color: rgba(3, 110, 30, 0.755)">
+            <h1><FONT FACE="Britannic Bold" SIZE="8">Galeria</FONT></h1>
+        </div>
+      </div>
+    </center>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <a target="_blank">
+                        <img id="imagen1" class="w-100"  src="https://cde.peru.com//ima/0/1/7/6/8/1768902/924x530/fotos-dia.jpg" alt="Imagen 1" height="250px"/>
+                        <div>
+                            <p style="color: black"><FONT FACE="Britannic Bold" SIZE="6">Imagen 1</FONT></p>
+                        </div>
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <a target="_blank">
+                        <img id="imagen2" class="w-100" src="https://difundir.org/wp-content/uploads/2015/12/111689_subitem_full.jpg" alt="Imagen 2" height="250px"/>
+                        <div>
+                            <p style="color: black"><FONT FACE="Britannic Bold" SIZE="6">Imagen 2</FONT></p>
+                        </div>
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <a target="_blank">
+                            <img id="imagen3" class="w-100" src="https://difundir.org/wp-content/uploads/2015/12/111691_subitem_full.jpg" alt="Imagen 3" height="250px"/>
+                            <div>
+                                <p style="color: black"><FONT FACE="Britannic Bold" SIZE="6">Imagen 3</FONT></p>
+                            </div>
+                    </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <a target="_blank">
+                            <img id="imagen4" class="w-100" src="https://difundir.org/wp-content/uploads/2015/12/111693_subitem_full.jpg" alt="Imagen 4" height="250px"/>
+                            <div>
+                                <p style="color: black"><FONT FACE="Britannic Bold" SIZE="6">Imagen 4</FONT></p>
+                            </div>
+                    </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <a target="_blank">
+                            <img id="imagen5" class="w-100" src="https://difundir.org/wp-content/uploads/2015/12/111697_subitem_full.jpg" alt="Imagen 5" height="250px"/>
+                            <div>
+                                <p style="color: black"><FONT FACE="Britannic Bold" SIZE="6">Imagen 5</FONT></p>
+                            </div>
+                    </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <a target="_blank">
+                            <img id="imagen6" class="w-100" src="https://difundir.org/wp-content/uploads/2015/12/111699_subitem_full.jpg" alt="Imagen 6" height="250px"/>
+                            <div>
+                                <p style="color: black"><FONT FACE="Britannic Bold" SIZE="6">Imagen 6</FONT></p>
+                            </div>
+                    </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <a target="_blank">
+                            <img id="imagen7" class="w-100" src="https://difundir.org/wp-content/uploads/2015/12/111701_subitem_full.jpg" alt="Imagen 7" height="250px"/>
+                            <div>
+                                <p style="color: rgb(68, 10, 10)"><FONT FACE="Britannic Bold" SIZE="6">Imagen 7</FONT></p>
+                            </div>
+                    </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <a target="_blank">
+                            <img id="imagen8" class="w-100" src="https://difundir.org/wp-content/uploads/2015/12/111702_subitem_full.jpg" alt="Imagen 8" height="250px"/>
+                            <div>
+                                <p style="color: black"><FONT FACE="Britannic Bold" SIZE="6">Imagen 8</FONT></p>
+                            </div>
+                    </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <a target="_blank">
+                    <img id="imagen9" class="w-100" src="https://difundir.org/wp-content/uploads/2015/12/111706_subitem_full.jpg" alt="Imagen 9" height="250px">
+                    <div>
+                        <p style="color: black"><FONT FACE="Britannic Bold" SIZE="6">Imagen 9</FONT></p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <a target="_blank">
+                    <img id="imagen10" class="w-100" src="https://difundir.org/wp-content/uploads/2015/12/111718_subitem_full.jpg" alt="Imagen 10" height="250px">
+                    <div>
+                        <p style="color: black"><FONT FACE="Britannic Bold" SIZE="6">Imagen 10</FONT></p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img">
+      <div id="caption"></div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./js/socket.io.js"></script>
+    <script>
+      // Get the modal
+      var modal = document.getElementById('myModal');
+
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var Img = document.getElementById('imagen1');
+      var Img2 = document.getElementById('imagen2');
+      var Img3 = document.getElementById('imagen3');
+      var Img4 = document.getElementById('imagen4');
+      var Img5 = document.getElementById('imagen5');
+      var Img6 = document.getElementById('imagen6');
+      var Img7 = document.getElementById('imagen7');
+      var Img8 = document.getElementById('imagen8');
+      var Img9 = document.getElementById('imagen9');
+      var Img10 = document.getElementById('imagen10');
+      var modalImg = document.getElementById("img");
+      var captionText = document.getElementById("caption");
+
+      Img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+
+      Img2.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+
+      Img3.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+
+      Img4.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+
+      Img5.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+
+      Img6.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+
+      Img7.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = tis.alt;
+      }
+
+      Img8.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+
+      Img9.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+
+      Img10.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+    </script>
+  </body>
+</html>

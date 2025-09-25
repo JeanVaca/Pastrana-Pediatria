@@ -1,0 +1,6 @@
+integracion de socket.io 
+paso 1: instalar el npm install socket.io --save
+paso 2: desplegar la carpeta de node_modules 
+paso 3: desplegar la carpeta socket.io-client  
+paso 4: desplegar la carpeta dist
+paso 5: copiar socket.io.js y socket.io.js.map en la carpeta js de la carpeta public. 

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Foco</title>
+
+    <style media="screen">
+      .plus{
+        background-image: url("img/lampOn.gif");
+        width:130px;
+        height:200px;
+        background-repeat:no-repeat;
+      }
+
+      .plus.minus{
+        background-image: url("img/lampOff.gif");
+        width:130px;
+        height:200px;
+        background-repeat:no-repeat;
+      }
+    </style>
+
+    <body>
+        <a href="#"><div class="plus"></div></a>
+
+        <script src="./js/socket.io.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script>
+          $(".plus").click(function(){
+            $(this).toggleClass("minus")  ;
+          })
+      </script>
+    </body>
+</html>
